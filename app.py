@@ -9,16 +9,16 @@ from datetime import datetime
 
 db = None
 counter = 1
-account_name = "maitreyeestore"
-account_key = "o2LHXv2HLxW4zRnQvIBrwo8gnRyeEc7c+Wke28bSgVZAYiL1H//9WRB2rr0l/9lL0H+GE2EIm7fO+AStNBUcWg=="
-container_name = "maitreyeecontainer"
-connect_str = 'DefaultEndpointsProtocol=https;AccountName=maitreyeestore;AccountKey=o2LHXv2HLxW4zRnQvIBrwo8gnRyeEc7c+Wke28bSgVZAYiL1H//9WRB2rr0l/9lL0H+GE2EIm7fO+AStNBUcWg==;EndpointSuffix=core.windows.net'
+account_name = ""
+account_key = ""
+container_name = ""
+connect_str = ''
 
 def get_sql_connection():
     server = 'maitreyeedb.database.windows.net'
-    database = 'image_metadata'
-    username = 'maitreyee'
-    password = 'Default@123'
+    database = ''
+    username = ''
+    password = ''
     cnxn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+password)
     return cnxn
 
